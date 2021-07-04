@@ -1,0 +1,113 @@
+#site-head {
+    color: #26179a;
+}
+
+a.btn {
+    background-color: #ea527c;
+}
+
+#wrapper > .bg {
+    background-color:   _palette(wrapper-bg);
+    background-image: none;
+}
+
+#intro {
+    justify-content: center;
+    padding: 5rem 4rem 7rem 4rem;
+
+    @include breakpoint('<=medium') {
+        padding: 4rem 4rem 2rem 4rem;
+    }
+
+    @include breakpoint('<=small') {
+        padding: 3rem 2rem 1rem 2rem;
+    }
+
+    h1{
+        font-size: 4rem;
+
+        @include breakpoint('<=medium') {
+            font-size: 4rem;
+        }
+    
+        @include breakpoint('<=small') {
+            font-size: 3rem;
+        }   
+    }
+}
+
+#intro-logo {
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: 6rem;
+
+    @include breakpoint('<=large') {
+        display: block;
+        width: 6rem;
+        height: 6rem;
+        margin-bottom: 6rem;
+    }
+
+    @include breakpoint('<=medium') {
+        display: block;
+        width: 5rem;
+        height: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    @include breakpoint('<=small') {
+        display: block;
+        margin-bottom: 4rem;
+    }
+
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+#nav {
+    //background-color: #2d275d;
+
+    ul.links {
+        li:first-child {
+            a {
+                display: none;
+                /*padding-top: 0.5rem;*/
+            }
+            /*a img{
+                height: 0rem;
+            }*/
+        }
+
+        li:first-child.active {
+            background-color: transparent;
+        }
+    }
+}
+
+#intro {
+    p {
+        font-style: normal;
+    }
+
+    @include breakpoint('<=medium') {
+        min-height: 100vh;
+    }
+
+    @include breakpoint('<=small') {
+        min-height: 100vh;
+
+        .actions {
+            display: none;
+        }
+    }
+}
+
+#navPanel nav ul li:first-child a img {
+    height: 3rem;
+}
+
+#copyright {
+    margin: 6rem auto 4rem auto;
+}

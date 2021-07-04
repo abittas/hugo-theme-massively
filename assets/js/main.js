@@ -12,6 +12,7 @@
 		$header = $('#header'),
 		$nav = $('#nav'),
 		$main = $('#main'),
+		$footer = $('#footer'),
 		$navPanelToggle = $('#navPanelToggle'),
 		$navPanel, $navPanelInner;
 
@@ -214,11 +215,11 @@
 			// Hide intro on scroll (> small).
 				breakpoints.on('>small', function() {
 
-					$main.unscrollex();
+					$footer.unscrollex();
 
-					$main.scrollex({
+					$footer.scrollex({
 						mode: 'bottom',
-						top: '25vh',
+						top: '50vh',
 						bottom: '-50vh',
 						enter: function() {
 							$intro.addClass('hidden');
@@ -233,12 +234,12 @@
 			// Hide intro on scroll (<= small).
 				breakpoints.on('<=small', function() {
 
-					$main.unscrollex();
+					$footer.unscrollex();
 
-					$main.scrollex({
+					$footer.scrollex({
 						mode: 'middle',
-						top: '15vh',
-						bottom: '-15vh',
+						top: '100vh',
+						bottom: '-55vh',
 						enter: function() {
 							$intro.addClass('hidden');
 						},

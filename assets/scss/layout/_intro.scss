@@ -67,9 +67,9 @@
 		}
 
 		body.is-preload & {
-			@include vendor('transform', 'translateY(2rem)');
+			//@include vendor('transform', 'translateY(2rem)');
 			opacity: 0;
-
+			
 			&:not(.hidden) {
 				& + #header + #nav {
 					@include vendor('transform', 'translateY(4rem)');
